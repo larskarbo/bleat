@@ -33,7 +33,7 @@
     } else if (typeof exports === 'object') {
         // Node. Does not work with strict CommonJS
         module.exports = function(bleat) {
-            return factory(require('noble'), bleat, require('./bluetooth.helpers'));
+            return factory(require('noble-mac'), bleat, require('./bluetooth.helpers'));
         };
     } else {
         // Browser globals with support for web workers (root is window)
