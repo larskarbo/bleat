@@ -24,7 +24,8 @@
     "node": ">=4.8.0"
   },
   "dependencies": {
-    "noble-mac": "https://github.com/Timeular/noble-mac.git"
+    "noble-mac": "https://github.com/Timeular/noble-mac.git",
+    "xpc-connection": "git://github.com/taoyuan/node-xpc-connection.git"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

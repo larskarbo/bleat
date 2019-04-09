@@ -200,12 +200,13 @@
                     }
                 }
             }, function() {
-                scanner = setTimeout(function() {
+                scanner = setTimeout(function () {
+                    console.log('SANNING 🎻')
                     cancelRequest()
                     .then(function() {
                         if (!found) reject("requestDevice error: no devices found");
                     });
-                }, options.scanTime || defaultScanTime);
+                }, 30000);
             }, wrapReject(reject, "requestDevice error"));
         });
     }

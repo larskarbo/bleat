@@ -32,7 +32,8 @@
         define(['noble', 'bleat', 'bluetooth.helpers'], factory);
     } else if (typeof exports === 'object') {
         // Node. Does not work with strict CommonJS
-        module.exports = function(bleat) {
+        module.exports = function (bleat) {
+            console.log('Using modified version that uses noble-mac instead of noble package 😘');
             return factory(require('noble-mac'), bleat, require('./bluetooth.helpers'));
         };
     } else {
